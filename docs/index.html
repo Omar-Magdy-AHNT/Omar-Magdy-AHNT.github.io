@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Magdy Portfolio</title>
+    <script>
+      // Prevent flash of wrong theme on first paint
+      (function() {
+        try {
+          var ls = localStorage.getItem('theme-dark');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = ls === 'true' || (ls === null && prefersDark);
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-CN6PKwTO.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-YlAcWs7M.css">
+  </head>
+  <body class="bg-white text-black dark:bg-[#0b0b1f] dark:text-white">
+    <div id="root"></div>
+  </body>
+</html>
